@@ -1,0 +1,22 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class ProjectileScript : MonoBehaviour {
+
+	public float speed;
+
+	// Use this for initialization
+	void Start () {
+		gameObject.GetComponent<Rigidbody> ().velocity = transform.up * speed;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+
+	void OnTriggerEnter(Collider other){
+		Destroy (this.gameObject);
+	}
+
+}
