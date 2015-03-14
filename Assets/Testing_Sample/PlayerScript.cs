@@ -16,7 +16,7 @@ public class PlayerScript : MonoBehaviour {
 	void Update () {
 	}
 
-	void OnTriggerEnter(Collider other){
+	protected void OnTriggerEnter(Collider other){
 		if (other.name == "Projectile") {
 			health -= 10;
 		} else {

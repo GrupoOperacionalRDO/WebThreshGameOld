@@ -15,7 +15,7 @@ public class ProjectileScript : MonoBehaviour {
 	
 	}
 
-	void OnTriggerEnter(Collider other){
+	protected void OnTriggerEnter(Collider other){
 		Destroy (this.gameObject);
 	}
 
