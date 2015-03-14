@@ -7,7 +7,7 @@ public class SoulScript : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		gameObject.GetComponent<Rigidbody> ().velocity = transform.up * speed;
+		gameObject.GetComponent<Rigidbody> ().velocity = transform.right * speed;
 	}
 	
 	// Update is called once per frame
