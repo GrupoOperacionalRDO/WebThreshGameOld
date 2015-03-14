@@ -8,6 +8,7 @@ public class HUDController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		gameObject.GetComponentInChildren<Text> ().text = "Score: " + score.ToString ();
 	}
 	
 	// Update is called once per frame
@@ -17,6 +18,7 @@ public class HUDController : MonoBehaviour {
 
 	public void setScore(float score){
 		this.score = score;
+		this.Update ();
 	}
 
 	public float getScore(){
